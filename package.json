@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "grunt-critical": "^3.0.1"
+  },
+  "dependencies": {
+    "grunt": "^1.5.3"
+  }
+}
