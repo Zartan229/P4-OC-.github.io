@@ -1,189 +1,718 @@
-<!doctype html>
-<html lang="Default">
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-    
-	<style>body{margin:0}nav{display:block}a{background-color:transparent}h1{margin:.67em 0;font-size:2em}img{border:0}button{margin:0;font:inherit;color:inherit}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{padding:0;border:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}button{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}img{vertical-align:middle}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}h1{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h1{margin-top:20px;margin-bottom:10px}h1{font-size:36px}p{margin:0 0 10px}.text-center{text-align:center}ul{margin-top:0;margin-bottom:10px}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{margin-right:-15px;margin-left:-15px}.col-sm-12,.col-sm-6{position:relative;min-height:1px;padding-right:15px;padding-left:15px}label{display:inline-block;max-width:100%;margin-bottom:5px;font-weight:700}.btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;background-image:none;border:1px solid transparent;border-radius:4px}.btn-lg{padding:10px 16px;font-size:18px;line-height:1.3333333;border-radius:6px}.btn-block{display:block;width:100%}.collapse{display:none}.nav{padding-left:0;margin-bottom:0;list-style:none}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}.navbar-collapse{padding-right:15px;padding-left:15px;overflow-x:visible;-webkit-overflow-scrolling:touch;border-top:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}.navbar-brand{float:left;height:50px;padding:15px 15px;font-size:18px;line-height:20px}.navbar-brand>img{display:block}.navbar-toggle{position:relative;float:right;padding:9px 10px;margin-top:8px;margin-right:15px;margin-bottom:8px;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:4px}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}.container:after,.container:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.row:after,.row:before{display:table;content:" "}.container:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.row:after{clear:both}body{margin:0;padding:0;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a,button{outline:0!important}.bloc{width:100%;clear:both;background:50% 50% no-repeat;padding:0 50px;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;position:relative}.bloc .container{padding-left:0;padding-right:0}.bloc-lg{padding:100px 50px}.bloc-sm{padding:20px 50px}.bg-repeat{-webkit-background-size:auto!important;-moz-background-size:auto!important;-o-background-size:auto!important;background-size:auto!important}.bg-repeat{background:repeat}.bloc-bg-texture::before{content:"";background-size:2px 2px;position:absolute;top:0;bottom:0;left:0;right:0}.texture-paper::before{background:url("img/texture-paper.webp");background-size:280px 280px}.d-bloc{color:rgba(255,255,255,.7)}.l-bloc{color:rgba(0,0,0,.5)}.l-bloc .navbar a,.l-bloc .navbar-brand{color:rgba(0,0,0,.6)}.l-bloc .navbar-toggle .icon-bar{color:rgba(0,0,0,.6)}.navbar{margin-bottom:0;z-index:1}.navbar-brand{height:auto;padding:3px 15px;font-size:25px;font-weight:400;font-weight:600;line-height:44px}.navbar-brand img{max-height:200px;margin:0 5px 0 0;display:inline}.navbar-brand img[src$=svg]{width:216.88px;height:40px}.navbar .nav{padding-top:2px;margin-right:-16px;float:right;z-index:1}.nav>li{float:left;margin-top:4px;font-size:16px}.navbar-toggle{margin:10px 10px 0 0;border:0}.navbar-toggle .icon-bar{background-color:rgba(0,0,0,.5);width:26px}.mg-lg{margin-top:10px;margin-bottom:40px}.btn{margin:0 5px 5px 0}.btn-d{color:#fff;background:rgba(0,0,0,.3)}button{outline:0!important}.form-control{border-color:rgba(0,0,0,.1);box-shadow:none}.scrollToTop{width:40px;height:40px;position:fixed;bottom:20px;right:20px;opacity:0;z-index:500}.scrollToTop span{margin-top:6px}.btn,a,h1,label,p{font-family:helvetica;font-weight:400;color:#212121!important}.container{max-width:1000px}.hero-bloc-text{font-size:38px}p{font-size:14px;font-weight:700}.tight-width-whitespace{max-width:600px;margin:auto auto auto auto}.cta-hero{margin-top:22px;color:#fff!important;text-transform:uppercase;padding:12px 28px 12px 28px;font-size:16px;font-weight:700}h1{color:#333!important}.bgc-white{background-color:#fff}.bgc-atomic-tangerine{background-color:#df3602}.tc-white{color:#df3602!important}.btn-atomic-tangerine{background:#df3602;color:#fff!important}.bg-dots-bg{background-image:url("img/dots-bg.png")}@media (max-width:1024px){.bloc{padding-left:20px;padding-right:20px}}@media (max-width:991px){.container{width:100%}.page-container{overflow-x:hidden;position:relative}.bloc{padding-left:constant(safe-area-inset-left);padding-right:constant(safe-area-inset-right)}}@media (max-width:767px){.page-container{overflow-x:hidden;position:relative}h1,p{padding-left:10px!important;padding-right:10px!important}.navbar .nav{padding-top:0;border-top:1px solid rgba(0,0,0,.2);float:none!important}.navbar.row{margin-left:0;margin-right:0}.site-navigation{position:inherit;transform:none;-webkit-transform:none;-ms-transform:none}.nav>li{margin-top:0;border-bottom:1px solid rgba(0,0,0,.1);background:rgba(0,0,0,.05);text-align:left;padding-left:15px;width:100%}.navbar-collapse{padding:0;overflow-x:hidden;-webkit-box-shadow:none;box-shadow:none}.navbar-brand img{max-height:40px;width:auto}.bloc{padding-left:0;padding-right:0}.bloc-lg{padding:40px 0}.bloc-sm{padding-left:0;padding-right:0}form{padding:5px}}@media (max-width:400px){.bloc{padding-left:0;padding-right:0}}@font-face{font-family:FontAwesome;src:url(fonts/fontawesome-webfont.eot?v=4.7.0);src:url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),url(fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'),url(fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'),url(fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'),url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight:400;font-style:normal;font-display:swap}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-chevron-up:before{content:"\f077"}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}</style>
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" media="print" onload="this.media='all'">
-	<link rel="stylesheet" type="text/css" href="style.css" media="print" onload="this.media='all'">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="print" onload="this.media='all'">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.css" media="print" onload="this.media='all'">
-	
-    
-	<script src="./js/jquery-2.1.0.min.js" defer></script>
-	<script src="./js/bootstrap.min.js"defer></script>
-	<script src="./js/blocs.min.js"defer></script>
-	<script src="./js/jqBootstrapValidation.js"defer></script>
-	<script src="./js/formHandler.js"defer></script>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="Page contact du site La panthère" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
+	<link rel="preload" as="image" href="./img/dots-bg.png" />
+	<link rel="preload" as="image" href="./img/texture-paper.webp" />
+
+    <style>
+      body {
+        margin: 0;
+      }
+      nav {
+        display: block;
+      }
+      a {
+        background-color: transparent;
+      }
+      h1 {
+        margin: 0.67em 0;
+        font-size: 2em;
+      }
+      img {
+        border: 0;
+      }
+      button {
+        margin: 0;
+        font: inherit;
+        color: inherit;
+      }
+      button {
+        overflow: visible;
+      }
+      button {
+        text-transform: none;
+      }
+      button {
+        -webkit-appearance: button;
+      }
+      button::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+      }
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      :after,
+      :before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 10px;
+      }
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff;
+      }
+      button {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+      }
+      a {
+        color: #337ab7;
+        text-decoration: none;
+      }
+      img {
+        vertical-align: middle;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+      h1 {
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.1;
+        color: inherit;
+      }
+      h1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      h1 {
+        font-size: 36px;
+      }
+      p {
+        margin: 0 0 10px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      ul {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .row {
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+      .col-sm-12,
+      .col-sm-6 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
+      }
+      .btn {
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+      }
+      .btn-lg {
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.3333333;
+        border-radius: 6px;
+      }
+      .btn-block {
+        display: block;
+        width: 100%;
+      }
+      .collapse {
+        display: none;
+      }
+      .nav {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+      }
+      .nav > li {
+        position: relative;
+        display: block;
+      }
+      .nav > li > a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+      }
+      .navbar {
+        position: relative;
+        min-height: 50px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+      }
+      .navbar-collapse {
+        padding-right: 15px;
+        padding-left: 15px;
+        overflow-x: visible;
+        -webkit-overflow-scrolling: touch;
+        border-top: 1px solid transparent;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      }
+      .navbar-brand {
+        float: left;
+        height: 50px;
+        padding: 15px 15px;
+        font-size: 18px;
+        line-height: 20px;
+      }
+      .navbar-brand > img {
+        display: block;
+      }
+      .navbar-toggle {
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        margin-top: 8px;
+        margin-right: 15px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+      }
+      .navbar-toggle .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+      }
+      .navbar-toggle .icon-bar + .icon-bar {
+        margin-top: 4px;
+      }
+      .navbar-nav {
+        margin: 7.5px -15px;
+      }
+      .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+      }
+      .container:after,
+      .container:before,
+      .nav:after,
+      .nav:before,
+      .navbar-collapse:after,
+      .navbar-collapse:before,
+      .navbar-header:after,
+      .navbar-header:before,
+      .navbar:after,
+      .navbar:before,
+      .row:after,
+      .row:before {
+        display: table;
+        content: " ";
+      }
+      .container:after,
+      .nav:after,
+      .navbar-collapse:after,
+      .navbar-header:after,
+      .navbar:after,
+      .row:after {
+        clear: both;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      a,
+      button {
+        outline: 0 !important;
+      }
+      .bloc {
+        width: 100%;
+        clear: both;
+        background: 50% 50% no-repeat;
+        padding: 0 50px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative;
+      }
+      .bloc .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .bloc-lg {
+        padding: 100px 50px;
+      }
+      .bloc-sm {
+        padding: 20px 50px;
+      }
+      .bg-repeat {
+        -webkit-background-size: auto !important;
+        -moz-background-size: auto !important;
+        -o-background-size: auto !important;
+        background-size: auto !important;
+      }
+      .bg-repeat {
+        background: repeat;
+      }
+      .bloc-bg-texture::before {
+        content: "";
+        background-size: 2px 2px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .texture-paper-contact::before {
+        background: url("img/texture-paper.webp");
+
+      }
+      .d-bloc {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .l-bloc {
+        color: rgba(0, 0, 0, 0.5);
+      }
+      .l-bloc .navbar a,
+      .l-bloc .navbar-brand {
+        color: rgba(0, 0, 0, 0.6);
+      }
+      .l-bloc .navbar-toggle .icon-bar {
+        color: rgba(0, 0, 0, 0.6);
+      }
+      .navbar {
+        margin-bottom: 0;
+        z-index: 1;
+      }
+      .navbar-brand {
+        height: auto;
+        padding: 3px 15px;
+        font-size: 25px;
+        font-weight: 400;
+        font-weight: 600;
+        line-height: 44px;
+      }
+      .navbar-brand img {
+        max-height: 200px;
+        margin: 0 5px 0 0;
+        display: inline;
+      }
+      .navbar-brand img[src$="svg"] {
+        width: 216.88px;
+        height: 40px;
+      }
+      .navbar .nav {
+        padding-top: 2px;
+        margin-right: -16px;
+        float: right;
+        z-index: 1;
+      }
+      .nav > li {
+        float: left;
+        margin-top: 4px;
+        font-size: 16px;
+      }
+      .navbar-toggle {
+        margin: 10px 10px 0 0;
+        border: 0;
+      }
+      .navbar-toggle .icon-bar {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 26px;
+      }
+      .mg-lg {
+        margin-top: 10px;
+        margin-bottom: 40px;
+      }
+      .btn {
+        margin: 0 5px 5px 0;
+      }
+      .btn-d {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      button {
+        outline: 0 !important;
+      }
+      .form-control {
+        border-color: rgba(0, 0, 0, 0.1);
+        box-shadow: none;
+      }
+      .scrollToTop {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        opacity: 0;
+        z-index: 500;
+      }
+      .scrollToTop span {
+        margin-top: 6px;
+      }
+      .btn,
+      a,
+      h1,
+      label,
+      p {
+        font-family: helvetica;
+        font-weight: 400;
+        color: #212121 !important;
+      }
+      .container {
+        max-width: 1000px;
+      }
+      .hero-bloc-text {
+        font-size: 38px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .tight-width-whitespace {
+        max-width: 600px;
+        margin: auto auto auto auto;
+      }
+      .cta-hero {
+        margin-top: 22px;
+        color: #fff !important;
+        text-transform: uppercase;
+        padding: 12px 28px 12px 28px;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      h1 {
+        color: #333 !important;
+      }
+      .bgc-white {
+        background-color: #fff;
+      }
+      .bgc-atomic-tangerine {
+        background-color: #df3602;
+      }
+      .tc-white {
+        color: #df3602 !important;
+      }
+      .btn-atomic-tangerine {
+        background: #df3602;
+        color: #fff !important;
+      }
+      .bg-dots-bg {
+        background-image: url("img/dots-bg.png");
+		
+      }
+      @media (max-width: 1024px) {
+        .bloc {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+      @media (max-width: 991px) {
+        .container {
+          width: 100%;
+        }
+        .page-container {
+          overflow-x: hidden;
+          position: relative;
+        }
+        .bloc {
+          padding-left: constant(safe-area-inset-left);
+          padding-right: constant(safe-area-inset-right);
+        }
+      }
+      @media (max-width: 767px) {
+        .page-container {
+          overflow-x: hidden;
+          position: relative;
+        }
+        h1,
+        p {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+        .navbar .nav {
+          padding-top: 0;
+          border-top: 1px solid rgba(0, 0, 0, 0.2);
+          float: none !important;
+        }
+        .navbar.row {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .site-navigation {
+          position: inherit;
+          transform: none;
+          -webkit-transform: none;
+          -ms-transform: none;
+        }
+        .nav > li {
+          margin-top: 0;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          background: rgba(0, 0, 0, 0.05);
+          text-align: left;
+          padding-left: 15px;
+          width: 100%;
+        }
+        .navbar-collapse {
+          padding: 0;
+          overflow-x: hidden;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+        .navbar-brand img {
+          max-height: 40px;
+          width: auto;
+        }
+        .bloc {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .bloc-lg {
+          padding: 40px 0;
+        }
+        .bloc-sm {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        form {
+          padding: 5px;
+        }
+      }
+      @media (max-width: 400px) {
+        .bloc {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+      @font-face {
+        font-family: FontAwesome;
+        src: url(fonts/fontawesome-webfont.eot?v=4.7.0);
+        src: url("fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),
+          url(fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"),
+          url(fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url("fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .fa-chevron-up:before {
+        content: "\f077";
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" type="text/css" href="./css/et-line.css" media="print" onload="this.media='all'" />
+
+    <script src="./js/jquery-2.1.0.min.js" defer></script>
+    <script src="./js/bootstrap.min.js" defer></script>
+    <script src="./js/bloc.min.js" defer></script>
+    <script src="./js/jqBootstrapValidation.js" defer></script>
+    <script src="./js/formHandler.js" defer></script>
     <title>page2</title>
 
-    
-<!-- Analytics -->
- 
-<!-- Analytics END -->
-    
-</head>
-<body>
-<!-- Principal conteneur -->
-<div class="page-container">
-    
-<!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
-	<div class="container bloc-sm">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="atlanta web design logo" height="40" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html">Accueil</a>
-					</li>
-					<li>
-					</li>
-					<li>
-						<a href="page2.html">page2 &gt;</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
-<!-- bloc-0 END -->
+    <!-- Analytics -->
 
-<!-- bloc-6 -->
-<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1 class="text-center hero-bloc-text tc-white">
-					Parlons web design !
-				</h1>
-				<p class="text-center mg-lg tc-white tight-width-whitespace">
-					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
-					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-6 END -->
+    <!-- Analytics END -->
+  </head>
+  <body>
+    <!-- Principal conteneur -->
+    <div class="page-container">
+      <!-- bloc-0 -->
+      <div class="bloc bgc-white l-bloc" id="bloc-0">
+        <div class="container bloc-sm">
+          <nav class="navbar row">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="index.html"
+                ><img src="img/agence-la-panthere-monochrome.svg" alt="atlanta web design logo" height="40"
+              /></a>
+              <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+                <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span
+                ><span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+              <ul class="site-navigation nav navbar-nav">
+                <li>
+                  <a href="index.html">Accueil</a>
+                </li>
+                <li></li>
+                <li>
+                  <a href="page2.html">page2 &gt;</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- bloc-0 END -->
 
-<!-- bloc-7 -->
-<div class="bloc bgc-white l-bloc" id="bloc-7">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-					<div class="form-group">
-						<label>
-							Nom
-						</label>
-						<input id="name" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
-					</div>
-					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-						Envoyer
-					</button>
-				</form>
-			</div>
-			<div class="col-sm-6">
-				<p>
-					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-7 END -->
+      <!-- bloc-6 -->
+      <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper-contact" id="bloc-6">
+        <div class="container bloc-lg">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="text-center hero-bloc-text tc-white">Parlons web design !</h1>
+              <p class="text-center mg-lg tc-white tight-width-whitespace">
+                Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br />
+                Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bloc-6 END -->
 
-<!-- ScrollToTop Button -->
-<a rel="nofollow" class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
+      <!-- bloc-7 -->
+      <div class="bloc bgc-white l-bloc" id="bloc-7">
+        <div class="container bloc-lg">
+          <div class="row">
+            <div class="col-sm-6">
+              <form
+                id="form_1"
+                novalidate
+                success-msg="Your message has been sent."
+                fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
+              >
+                <div class="form-group">
+                  <label for="name"> Nom </label>
+                  <input id="name" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label for="email"> Adresse email </label>
+                  <input id="email" class="form-control" type="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="about-us"> Comment nous avez-vous connu ? </label>
+                  <input class="form-control" type="email" id="about-us" required/>
+                </div>
+                <div class="form-group">
+                  <label for="message"> Brief de votre projet (Ajoutez autant de détails que nécessaire)<br /> </label
+                  ><textarea type="text" id="message" class="form-control" rows="4" cols="50" required></textarea>
+                </div>
+                <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">Envoyer</button>
+              </form>
+            </div>
+            <div class="col-sm-6">
+              <p>contact@agencelapanthere.com<br />2 place Sathonay 69001 Lyon<br />Ouvert de 9h à 18h, du lundi au vendredi<br /></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bloc-7 END -->
 
+      <!-- ScrollToTop Button -->
+      <a href="#" rel="nofollow" class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+      <!-- ScrollToTop Button END-->
 
-<!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
-				<p class="text-center white">
-					Agence La Panthère - Agence web basée à Lyon.<br>
-				</p>
-				<div class="row row-no-gutters social">
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-8 END -->
+      <!-- Footer - bloc-8 -->
+      <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+        <div class="container bloc-sm">
+          <div class="row">
+            <div class="col-sm-12">
+              <p class="text-center white">Agence La Panthère - Agence web basée à Lyon.<br /></p>
+              <div class="row row-no-gutters social">
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="index.html" aria-label="Image - Liens vers le site twitter.com"
+                      ><span class="fa fa-twitter icon-md"></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="index.html" aria-label="Image - Liens vers le site facebook.com"
+                      ><span class="fa fa-facebook icon-md"></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="index.html" aria-label="Image - Liens vers le site dribbble.com"
+                      ><span class="fa fa-dribbble icon-md"></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="index.html" aria-label="Image - Liens vers le site Instagram.com"
+                      ><span class="fa fa-instagram icon-md"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer - bloc-8 END -->
+    </div>
+    <!-- Principal conteneur END -->
 
-</div>
-<!-- Principal conteneur END -->
-    
+    <noscript><link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" /></noscript>
 
-    
+    <noscript><link rel="stylesheet" type="text/css" href="style.css" /></noscript>
 
-<noscript><link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"></noscript>
-    
+    <noscript><link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" /></noscript>
 
-    
-
-<noscript><link rel="stylesheet" type="text/css" href="style.css"></noscript>
-    
-
-    
-
-<noscript><link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css"></noscript>
-    
-
-    
-
-<noscript><link rel="stylesheet" type="text/css" href="./css/et-line.css"></noscript>
-    
-
-</body>
+    <noscript><link rel="stylesheet" type="text/css" href="./css/et-line.css" /></noscript>
+  </body>
 </html>

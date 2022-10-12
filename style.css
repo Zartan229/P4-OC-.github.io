@@ -92,9 +92,13 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
+.texture-paper-index::before {
     background: url("img/texture-paper.webp");
     background-size: 280px 280px;
+}
+.texture-paper-contact::before {
+    background: url("img/texture-paper.webp");
+
 }
 
 .b-parallax {
@@ -820,14 +824,18 @@ h4 {
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
 }
-
+@media (max-width: 391px) {
+    .bg-banniere {
+  background-image: url("img/agence-la-pantheremobile.webp");
+  }
+}
 .bg-banniere {
     background-image: url("img/agence-la-panthere.webp");
 }
-
 .bg-presentation {
     background-image: url("img/image-de-presentation.webp");
 }
+
 
 @media (max-width: 1024px) {
     .bloc {
