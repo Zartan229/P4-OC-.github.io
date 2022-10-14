@@ -12,10 +12,9 @@
     <link rel="preload" as="image" href="./img/agence-la-pantheremobile.webp" />
     <link rel="preload" as="font" href="./fonts/et-line.woff" />
     <link rel="preload" as="image" href="./img/texture-paper.webp" />
-
-
+    <link rel="preload" as="image" href="./css/font-awesome.min.css" />
+    
     <style>
-
       body {
         margin: 0;
       }
@@ -263,7 +262,6 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         content-visibility: auto;
-        contain-intrinsic-size: 1px 5000px;
       }
       a,
       button {
@@ -423,7 +421,7 @@
         background-color: #fff;
       }
       .bgc-dark-slate-blue {
-        background-color: #364577;
+        background-color: #05060A;
       }
       .tc-white {
         color: #df3602 !important;
@@ -432,7 +430,7 @@
         background: #df3602;
         color: #fff !important;
       }
-      
+
       .bg-banniere {
         background-image: url("img/agence-la-pantheremobile.webp");
       }
@@ -452,10 +450,6 @@
         .page-container {
           overflow-x: hidden;
           position: relative;
-        }
-        .bloc {
-          padding-left: constant(safe-area-inset-left);
-          padding-right: constant(safe-area-inset-right);
         }
       }
       @media (max-width: 767px) {
@@ -533,12 +527,7 @@
         clip: rect(0, 0, 0, 0);
         border: 0;
       }
-      
     </style>
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" defer="" media="print" onload="this.media='all'" />
-    <link rel="stylesheet" type="text/css" href="style.css" defer="" media="print" onload="this.media='all'" />
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" defer="" media="print" onload="this.media='all'" />
-    <link rel="stylesheet" type="text/css" href="./css/et-line.css" defer="" media="print" onload="this.media='all'" />
 
     <script src="./js/jquery-2.1.0.min.js" defer=""></script>
     <script src="./js/bootstrap.min.js" defer=""></script>
@@ -546,7 +535,7 @@
     <script src="./js/jquery.touchSwipe.min.js" defer=""></script>
     <script src="./js/gmaps.min.js" defer=""></script>
 
-    <title>.</title>
+    <title>Accueil</title>
 
     <!-- Analytics -->
 
@@ -554,41 +543,50 @@
   </head>
   <body>
     <!-- Principal conteneur -->
-    <div class="page-container">
+    <div role="main" class="page-container">
       <!-- bloc-0 -->
       <div class="bloc bgc-white l-bloc" id="bloc-0">
         <div class="container bloc-sm">
-          <h1>
-            <nav class="navbar row">
-              <div class="navbar-header">
+          <nav class="navbar row">
+            <div class="navbar-header" >
+              <h1>
                 <a class="navbar-brand" href="index.html"
                   ><img src="img/agence-la-panthere-monochrome.svg" alt="paris web design logo agence web meilleure agence" height="40"
                 /></a>
-                <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-                  <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span
-                  ><span class="icon-bar"></span>
-                </button>
-              </div>
+              </h1>
+              <button
+                aria-pressed="false"
+                id="nav-toggle"
+                type="button"
+                class="ui-navbar-toggle navbar-toggle"
+                data-toggle="collapse"
+                data-target=".navbar-1"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
 
-              <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-                <ul class="site-navigation nav navbar-nav">
-                  <li>
-                    <a href="index.html">Accueil</a>
-                  </li>
-                  <li></li>
-                  <li>
-                    <a href="page2.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </h1>
+            <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+              <ul class="site-navigation nav navbar-nav">
+                <li>
+                  <a href="index.html">Accueil</a>
+                </li>
+                <li></li>
+                <li>
+                  <a href="page2.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
       <!-- bloc-0 END -->
 
       <!-- bloc-1-presentation -->
-      <div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper-index b-parallax" id="bloc-1-hero">
+      <section aria-label="bloc-1" class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper-index b-parallax" id="bloc-1-hero">
         <div class="container bloc-lg">
           <div class="row tight-width-whitespace">
             <div class="col-sm-12">
@@ -597,7 +595,7 @@
                 class="center-block image-resize-mode"
                 width="100"
                 height="100"
-                alt="Agence La Panthère, agence web paris, création logo paris"
+                alt="Logo de l'Agence La Panthère"
               />
               <h2 class="text-center hero-bloc-text tc-white">Agence La Panthère</h2>
               <div class="text-center">
@@ -606,11 +604,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- bloc-1-presentation END -->
 
       <!-- bloc-2-services -->
-      <div class="bloc bgc-white l-bloc" id="bloc-2-services">
+      <section aria-label="bloc-2" class="bloc bgc-white l-bloc" id="bloc-2-services">
         <div class="container bloc-md">
           <div class="row">
             <div class="col-sm-12 text-center">
@@ -658,11 +656,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- bloc-2-services END -->
 
       <!-- bloc-3-what-i-do -->
-      <div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
+      <section aria-label="bloc-3"  class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
         <div class="container bloc-lg">
           <div class="row tight-width-whitespace black-background">
             <div class="col-sm-12">
@@ -679,11 +677,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- bloc-3-what-i-do END -->
 
       <!-- bloc-4-portfolio -->
-      <div class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
+      <section aria-label="bloc-4" class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-12 text-center">
@@ -699,7 +697,7 @@
                 data-caption="Refonte d'un site web pour un journal local"
                 data-frame="snapshot-lb"
                 ><img
-				          loading="lazy"
+                  loading="lazy"
                   src="img/1.webp"
                   alt="paris web design logo agence web meilleure agence et refonte site web journal"
                   class="img-responsive portfolio-thumb"
@@ -715,7 +713,7 @@
                 data-caption="Création d'un site web pour photographes"
                 data-frame="snapshot-lb"
                 ><img
-				  loading="lazy"
+                  loading="lazy"
                   src="img/2.webp"
                   class="img-responsive portfolio-thumb"
                   alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes"
@@ -733,7 +731,7 @@
                 data-caption="Création d'un site internet pour un voyageur"
                 data-frame="snapshot-lb"
                 ><img
-				  loading="lazy"
+                  loading="lazy"
                   src="img/3.webp"
                   class="img-responsive portfolio-thumb"
                   alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"
@@ -751,7 +749,7 @@
                 data-caption="Conception d'un site pour une agence de mariage"
                 data-frame="snapshot-lb"
                 ><img
-				  loading="lazy"
+                  loading="lazy"
                   src="img/4.webp"
                   class="img-responsive portfolio-thumb"
                   alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage"
@@ -763,11 +761,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- bloc-4-portfolio END -->
 
       <!-- bloc-5-cta -->
-      <div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
+      <section aria-label="bloc-5" class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
         <div class="container bloc-lg">
           <div class="row">
             <h2 class="mg-md text-center tc-white">Prêt pour redonner vie à votre projet ?<br />Contactez notre équipe !</h2>
@@ -776,11 +774,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- bloc-5-cta END -->
 
       <!-- Footer - bloc-8 -->
-      <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+      <section aria-label="bloc-8" class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
         <div class="container bloc-sm">
           <div class="row">
             <div class="col-sm-12">
@@ -818,17 +816,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- Footer - bloc-8 END -->
     </div>
     <!-- Principal conteneur END -->
-
-    <noscript><link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" defer="" /></noscript>
-
-    <noscript><link rel="stylesheet" type="text/css" href="style.css" defer="" /></noscript>
-
-    <noscript><link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" defer="" /></noscript>
-
-    <noscript><link rel="stylesheet" type="text/css" href="./css/et-line.css" defer="" /></noscript>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/et-line.css" />
   </body>
 </html>
